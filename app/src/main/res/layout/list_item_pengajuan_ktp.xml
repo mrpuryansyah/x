@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/ivlampiran"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvnik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123455789" />
+
+        <TextView
+            android:id="@+id/tvnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nama" />
+
+        <TextView
+            android:id="@+id/tvkec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Karang tengah" />
+
+        <TextView
+            android:id="@+id/tvstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="status" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivlampiran"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/no_photo_available"
+        android:scaleType="fitCenter" />
+</RelativeLayout>

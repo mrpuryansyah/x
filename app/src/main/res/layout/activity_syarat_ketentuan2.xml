@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.form.sinkronisasidatakependudukan.ActivitySyaratKetentuan">
+
+    <LinearLayout
+        android:id="@+id/llpersyaratan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffb848"
+            android:padding="5dp"
+            android:text="Prosedur"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlsatu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="5dp"
+                android:text="1."
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvsatu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/q"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Input :\n1. Input Nomor Kepala Keluarga\n2. Input Nama Lengkap Pemohon\n3. Pilih Kecamatan Sesuai Dengan Kartu Keluarga\n4. Input Keterangan\n5. Upload File Pendukung Seperti : Upload Foto Kartu Keluarga Yang akan dilakukan Sinkronisasi, File yang di Upload diwajibkan .jpg\n6. Input Nomor Handphone\n7. Cetak Tanda Terima\nApabila terdapat kesalahan ketika input,harap cek kembali Data Anda. data yang sudah tersimpan tidak dapat di hapus.\n\nLalu Klik Ajukan"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rldua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="5dp"
+                android:text="2."
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvdua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/w"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Pelaporan tidak dapat diwakilkan, harap menggunakan NO Kartu Keluarga."
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.1"
+    defaultConfig {
+        applicationId "com.example.x"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5' //youtube
+//    implementation files('/Users/mrizkipuryansyah/Downloads/YouTubeAndroidPlayerApi-1.2.2/libs/YouTubeAndroidPlayerApi.jar')
+    //youtube
+    implementation 'com.jakewharton:butterknife:10.2.0' // butterknife
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0' // butterknife
+    implementation 'com.android.volley:volley:1.1.1' //vollay
+    implementation 'com.github.gcacace:signature-pad:1.2.1' //ttd digital
+    implementation 'id.zelory:compressor:2.1.0' //compres gambar
+    implementation 'com.squareup.picasso:picasso:2.5.2' // kalau dinaikin, required min api21+
+    implementation 'net.gotev:uploadservice:3.4' // MultipartUploadRequest
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.android.support:cardview-v7:28.0.0' //cardview
+    implementation 'com.github.esafirm.android-image-picker:imagepicker:2.1.0' //ImagePicker
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0' //photoview
+    implementation 'com.android.support:design:28.0.0'
+
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">x</string>
+    <!--Volley-->
+    <string name="volley_error_tidak_ada_internet">Tidak ada koneksi internet</string>
+    <string name="volley_error_network_error">Periksa kembali koneksi internet anda</string>
+    <string name="volley_error_server_error">Terjadi kesalahan, silakan coba beberapa saat lagi</string>
+    <string name="volley_error_timeout">Timeout. Silakan coba beberapa saat lagi</string>
+    <string name="volley_error_terjadi_kesalahan">Terjadi kesalahan, silakan coba beberapa saat lagi</string>
+    <!--Volley-->
+</resources>

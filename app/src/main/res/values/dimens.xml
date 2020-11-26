@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="step_pager_tab_width">32dp</dimen>
+    <dimen name="step_pager_tab_height">3dp</dimen>
+    <dimen name="step_pager_tab_spacing">4dp</dimen>
+    <!--  v6 akta -->
+    <dimen name="v6_akta_step_pager_tab_width">20dp</dimen>
+    <dimen name="v6_akta_step_pager_tab_height">25dp</dimen>
+    <dimen name="v6_akta_step_pager_tab_spacing">15dp</dimen>
+    <dimen name="v6_akta_step_pager_text_size">14sp</dimen>
+</resources>

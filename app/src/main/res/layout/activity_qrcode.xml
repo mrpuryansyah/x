@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qrcode">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Scan"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonBarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextCode"
+        android:drawableTop="@drawable/ic_photo_camera_black_24dp"
+        android:gravity="bottom|center_vertical"
+        android:text="Barcode" />
+
+    <Button
+        android:id="@+id/buttonQRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_photo_camera_black_24dp"
+        android:gravity="bottom|center_vertical"
+        android:text=" QRCode"
+        android:layout_below="@+id/editTextCode"
+        android:layout_alignRight="@+id/editTextCode"
+        android:layout_alignEnd="@+id/editTextCode" />
+
+</RelativeLayout>
